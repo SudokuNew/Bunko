@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>MyBunko</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header" aria-label="MyBunko navigation">
+      <a class="brand-link" href="./" aria-label="MyBunko home">MyBunko</a>
+      <nav class="tab-bar" aria-label="Primary navigation">
+        <a class="tab-item is-active" href="./" aria-current="page">書架</a>
+        <a class="tab-item" href="#genres">ジャンル</a>
+        <a class="tab-item" href="#bookmarks">栞</a>
+      </nav>
+    </header>
+
+    <main class="site-shell">
+      <section class="hero" aria-labelledby="site-title">
+        <p class="eyebrow">Personal Library</p>
+        <h1 id="site-title">MyBunko</h1>
+        <p class="hero-copy">静かな書庫のように、本を少しずつ並べていくための場所です。</p>
+      </section>
+
+      <section class="library-shelves" aria-label="Empty wooden library shelves">
+        <div class="shelf-row reveal-shelf" style="--reveal-order: 0">
+          <div class="shelf-board" aria-hidden="true"></div>
+        </div>
+        <div class="shelf-row reveal-shelf" style="--reveal-order: 1">
+          <div class="shelf-board" aria-hidden="true"></div>
+        </div>
+        <div class="shelf-row reveal-shelf" style="--reveal-order: 2">
+          <div class="shelf-board" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
